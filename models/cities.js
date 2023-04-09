@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const hostCitiesSchema = new Schema(
+const citiesSchema = new Schema(
     {
         city: { type: String },
         country: { type: String },
@@ -22,4 +22,6 @@ const hostCitiesSchema = new Schema(
     }
 );
 
-module.exports = mongoose.model('HostCity', hostCitiesSchema);
+const City = mongoose.model('City', citiesSchema);
+
+module.exports = City;

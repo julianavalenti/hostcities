@@ -1,9 +1,10 @@
 const express = require("express")
 const mongoose = require ("mongoose")
-const City = require("./models/cities.js")
+const City = require("./models/cities")
 const app = express ();
 require("dotenv").config()
 const cityData = require ("./hostCities.js")
+
 
 mongoose.connect(process.env.DATABASE_URL)
 
