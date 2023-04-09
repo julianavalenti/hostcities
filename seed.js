@@ -23,4 +23,4 @@ cityDB().then(() => {
     mongoose.connection.close()
 }) 
 
-cityDB()
+// cityDB()

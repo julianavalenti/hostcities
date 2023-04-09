@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +6,12 @@
 <body>
     <h1>Host Cities</h1>
     <% cities.forEach(city => { %>
-        <h2><%=city.city %></h2>
-    <%}); %>
-    
-
+        <h2><%= city.city %></h2>
+        <ul>
+            <% city.mustSee.forEach(mustSee => { %>
+                <li><%= mustSee.name %></li>
+            <% }); %>
+        </ul>
+    <% }); %>
 </body>
 </html>
