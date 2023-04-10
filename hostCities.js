@@ -803,23 +803,11 @@ mustSee: [
 ]
 },
 {
-    name: 'Montreal',
-    country: 'Canada',
-    history: `Founded in 1642 by French settlers, including Paul de Chomedey de Maisonneuve and Jeanne Mance.
-    Became a key fur trading post and a center of the fur trade industry in the 17th and 18th centuries.
-    Passed from French to British rule in 1760 after the Seven Years' War.
-    Played a significant role in Canadian history, including being a hub of the fur trade, a center of industrialization, and a site of significant social and cultural developments.
-    Has a rich history of immigration, with diverse cultural influences, including French, English, Indigenous, and immigrant communities.`,
-    temperature: `Montreal has a humid continental climate with four distinct seasons.
-    Summers (June to August) are warm with average temperatures ranging from 20 to 26 degrees Celsius (68 to 79 degrees Fahrenheit).
-    Winters (December to February) are cold with average temperatures ranging from -6 to -12 degrees Celsius (21 to 10 degrees Fahrenheit).
-    Spring (March to May) and Fall (September to November) have mild temperatures with average temperatures ranging from 5 to 20 degrees Celsius (41 to 68 degrees Fahrenheit).
-    Montreal is known for its long, snowy winters with significant snowfall from December to March, making it a popular destination for winter sports enthusiasts.`,
-    transportation: `Public transportation in Montreal is primarily provided by the Société de transport de Montréal (STM), which operates a network of buses and a subway system called the Montreal Metro.
-    The Montreal Metro has four lines and serves the city and some surrounding areas, with a total of 68 stations.
-    Biking is popular in Montreal, with a network of bike lanes and bike paths, and a bike-sharing system called BIXI.
-    Montreal has several major highways, including Autoroute 20 and Autoroute 40, which connect the city to other parts of Canada and the United States.
-    Montreal also has a network of commuter trains, operated by the Réseau de transport métropolitain (RTM), which connects the city to its suburbs and surrounding areas.`,
+    city: 'Montreal',
+    country: "Canada",
+    history: "Founded in 1642 by French settlers, including Paul de Chomedey de Maisonneuve and Jeanne Mance.Became a key fur trading post and a center of the fur trade industry in the 17th and 18th centuries.Passed from French to British rule in 1760 after the Seven Years' War. Played a significant role in Canadian history, including being a hub of the fur trade, a center of industrialization, and a site of significant social and cultural developments. Has a rich history of immigration, with diverse cultural influences, including French, English, Indigenous, and immigrant communities.",
+    temperature: "Montreal has a humid continental climate with four distinct seasons. Summers (June to August) are warm with average temperatures ranging from 20 to 26 degrees Celsius (68 to 79 degrees Fahrenheit)Winters (December to February) are cold with average temperatures ranging from -6 to -12 degrees Celsius (21 to 10 degrees Fahrenheit).Spring (March to May) and Fall (September to November) have mild temperatures with average temperatures ranging from 5 to 20 degrees Celsius (41 to 68 degrees Fahrenheit).Montreal is known for its long, snowy winters with significant snowfall from December to March, making it a popular destination for winter sports enthusiasts.",
+    transportation: "Public transportation in Montreal is primarily provided by the Société de transport de Montréal (STM), which operates a network of buses and a subway system called the Montreal Metro.The Montreal Metro has four lines and serves the city and some surrounding areas, with a total of 68 stations.Biking is popular in Montreal, with a network of bike lanes and bike paths, and a bike-sharing system called BIXI.Montreal has several major highways, including Autoroute 20 and Autoroute 40, which connect the city to other parts of Canada and the United States.Montreal also has a network of commuter trains, operated by the Réseau de transport métropolitain (RTM), which connects the city to its suburbs and surrounding areas.",
     mustSee: [
         {
         name: 'Old Montreal (Vieux-Montreal)',
