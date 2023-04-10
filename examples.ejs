@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Host Cities</title>
+</head>
+<body>
+    <h1>Host Cities</h1>
+    <% cities.forEach(city => { %>
+        <h2><%= city.city %></h2>
+        <ul>
+            <% city.mustSee.forEach(mustSee => { %>
+                <li><%= mustSee.name %></li>
+                <li><%= mustSee.admissionFee %></li>
+                <li><%= mustSee.category %></li>
+                <li><%= mustSee.website %></li>
+            <% }); %>
+        </ul>
+    <% }); %>
+</body>
+</html>
+
+
+<style>
+    body {
+        background-image: url("/images/dreamstime_l_136805319.jpg");
+        background-attachment:fixed;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+</style>
+

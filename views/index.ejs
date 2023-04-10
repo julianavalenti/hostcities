@@ -2,16 +2,35 @@
 <html>
 <head>
     <title>Host Cities</title>
+    
+    
 </head>
 <body>
+    <nav>
+        <a href="/cities">HOME</a>
+        <a href="/cities/fifa">FIFA World Cup 2026™</a>
+        <a href="/cities/tickets">TICKETS</a>
+        
+        <% if (currentUser) { %>
+            <a href="/sessions/logout">LOGOUT</a> 
+          
+         <%}else { %>
+            <a href="/sessions/login">LOGIN</a>
+            <a href="/users/register">REGISTER</a>
+         <% } %>
+        </nav>
+
     <h1>Host Cities</h1>
-    <% cities.forEach(city => { %>
-        <h2><%= city.city %></h2>
-        <ul>
-            <% city.mustSee.forEach(mustSee => { %>
-                <li><%= mustSee.name %></li>
-            <% }); %>
-        </ul>
-    <% }); %>
+     <nav>
+        <a href="/users/register">REGISTER HERE</a>
+     </nav>
+
+    <nav>
+        <a href="/cities/us">UNITED STATES</a>
+        <a href="/cities/can">CANADA</a>
+        <a href="/cities/mex">MEXICO</a>
+    </nav>
+        
+
 </body>
 </html>
