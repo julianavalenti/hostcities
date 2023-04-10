@@ -8,12 +8,14 @@
 <body>
     <nav>
         <a href="/cities">HOME</a>
-        <a href="/cities/fifa">FIFA World Cup 2026™</a>
-        <a href="/cities/tickets">TICKETS</a>
+        <a href="https://www.fifa.com/fifaplus/en/home">FIFA World Cup 2026™</a>
+        <a href="https://www.fifa.com/fifaplus/en/tickets">TICKETS</a>
         
         <% if (currentUser) { %>
+        
+            <a href="/sessions/account">MY ACCOUNT</a> 
             <a href="/sessions/logout">LOGOUT</a> 
-          
+
          <%}else { %>
             <a href="/sessions/login">LOGIN</a>
             <a href="/users/register">REGISTER</a>
