@@ -1,12 +1,13 @@
 
-* {
+html {
   padding: 0;
   margin: 0;
+height: 100%;
   box-sizing: border-box ;
 }
 
 header {
-    background: rgb(199, 219, 51);
+    background: white;
 }
 
 li {
@@ -14,8 +15,9 @@ li {
 }
 
 a {
-    color: rgb(7, 199, 61);
+    color: rgb(248, 249, 247);
     text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .navbar {
@@ -24,6 +26,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    float: right;
 }
 
 .nav-menu {
@@ -43,7 +46,7 @@ a {
 }
 
 .nav-link:hover {
-    color: white;
+    color: rgb(214, 233, 15);
 }
 
 .hamburger {
@@ -72,27 +75,42 @@ a {
     display: grid;
     box-sizing: border-box;
     width: 100%;
-    
-    
-    text-align: center;
+    float: right;
+    text-align: right;
 }
 
 .intro-title {
     display: inline;
-    align-items: center;
-    font-family:'Mandali', sans-serif ;
-    font-size: 26px;
-    background-color: rgb(199, 219, 51);
-    color: black ;
+    align-items: right;
+    font-family: 'Bebas Neue', cursive;
+   font-weight: 200;
+    font-size: 55px;
+    margin-right: 70px;
+  
+    color: rgb(246, 241, 241) ;
     height: 200px;
+    float: right;
     
 }
 .intro-text {
 font-family:'Mandali', sans-serif ;
 font-size: 16px;
-text-align: center;
-}
+text-align: right;
+color: whitesmoke;
+padding-left: 1300px;
+padding-right: 100px;
+text-align: justify;
 
+}
+.intro-sub {
+    font-family:'Mandali', sans-serif ;
+    color: whitesmoke;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    margin: 20px;
+    padding-left: 100px;
+}
 
 .intro img {
     max-width: 400px;
@@ -101,9 +119,53 @@ text-align: center;
 body {
     margin: 0;
     position: relative;
-    background-color: rgb(199, 219, 51);
+    background-color: white;
+    background-image: url("/public/images/dreamstime_l_136805601.jpg");
+    background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+    height: 100%;
 }
 
+
+.custom-shape-divider-bottom-1681236526 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681236526 svg {
+    position: relative;
+    display: block;
+    width: calc(203% + 1.3px);
+    height: 91px;
+}
+
+.custom-shape-divider-bottom-1681236526 .shape-fill {
+    fill: #A1C6EB63;
+}
+
+.countries {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0 24px;
+    float: right;
+    gap: 60px;
+
+}
+
+.country-link {
+    gap: 60px;
+    color: aqua;
+}
 @media(max-width:768px){
     .hamburger {
         display: block;
