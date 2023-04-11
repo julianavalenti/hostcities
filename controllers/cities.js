@@ -11,6 +11,13 @@ citiesRouter.get('/', async (req, res) => {
     }
     );
 }); 
+citiesRouter.get('/about', async (req, res) => {
+	const allCities = await City.find({})
+    res.render('about.ejs', {
+        cities: allCities
+    }
+    );
+}); 
 
 citiesRouter.get('/us', async (req, res) => {
 	const allCities = await City.find({})

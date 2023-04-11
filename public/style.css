@@ -84,8 +84,9 @@ a {
     align-items: right;
     font-family: 'Bebas Neue', cursive;
    font-weight: 200;
-    font-size: 55px;
-    margin-right: 70px;
+    font-size: 45px;
+    margin-right: 85px;
+    margin-top: 100px;
   
     color: rgb(246, 241, 241) ;
     height: 200px;
@@ -94,22 +95,27 @@ a {
 }
 .intro-text {
 font-family:'Mandali', sans-serif ;
-font-size: 16px;
+font-size: 20px;
 text-align: right;
 color: whitesmoke;
 padding-left: 1300px;
 padding-right: 100px;
+margin-top: 60px;
 text-align: justify;
+line-height: calc(1ex / 0.25);
 
 }
 .intro-sub {
-    font-family:'Mandali', sans-serif ;
+    font-family: 'Chathura', sans-serif;
+    font-size: 40px;
     color: whitesmoke;
     position: absolute;
-    top: 150px;
-    right: 50px;
-    margin: 20px;
-    padding-left: 100px;
+    padding-top: 100px;
+    padding-left: 1350px;
+    padding-right: 140px;
+    text-align:center;
+    line-height: 40px;
+    margin-top: 150px;
 }
 
 .intro img {
@@ -121,6 +127,7 @@ body {
     position: relative;
     background-color: white;
     background-image: url("/public/images/dreamstime_l_136805601.jpg");
+  
     background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,17 +162,77 @@ body {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     padding: 0 24px;
     float: right;
-    gap: 60px;
-
+    gap: 50px;
+    padding-right: 200px;
+    font-size: 30px;
+    margin-top: 100px;
+    
 }
 
 .country-link {
-    gap: 60px;
-    color: aqua;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(149, 255, 0);
 }
+
+.about {
+    margin: 0;
+    position: relative;
+    background-color: white;
+    background-image: url("/public/images/dreamstime_l_136805601.jpg");
+  background-blend-mode: luminosity;
+    background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+    height: 100%;
+    
+}
+
+
+
+
+.register-btn{
+
+font-family: 'Bebas Neue', cursive;
+font-weight: 0;
+font-size: 20px;
+color: #fff;
+background-color: #052e8651;
+padding: 10px 30px;
+border: solid #f2f2f2 2px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 45px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+margin-left: 1500px;
+margin-right: 250px;
+
+}
+
+.register-btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #1fd2de;
+color: #39e816;
+border: solid 2px #eff2f5;
+}
+
+.btn-link {
+    text-align: center;
+    padding-left: 85px;
+}
+
+
 @media(max-width:768px){
     .hamburger {
         display: block;
