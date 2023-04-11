@@ -1,0 +1,50 @@
+<header class="container">
+        
+    <nav class="navbar">
+        <a href="/cities/about" class="nav-branding">Host Cities </a>
+       
+
+        <ul class="nav-menu">
+
+        
+        <li class="nav-item">
+            <a href="/cities" class="nav-link">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+            <a href="https://www.fifa.com/fifaplus/en/tickets" class="nav-link">TICKETS</a>
+        </li>
+        <% if (currentUser) { %>
+            <li class="nav-item">
+                <a href="/sessions/account" class="nav-link">MY ACCOUNT</a>
+            </li>
+            <li class="nav-item">
+                <a href="/sessions/logout" class="nav-link">LOGOUT</a>
+            </li>
+            
+
+         <%}else { %>
+
+            <li class="nav-item">
+                <a href="/sessions/login" class="nav-link">LOGIN</a>
+            </li>
+            <li class="nav-item">
+                <a href="/users/register" class="nav-link">REGISTER</a>
+            </li>
+          
+         <% } %>
+         <li class="nav-item">
+            <a href="https://www.fifa.com/fifaplus/en/home" class="nav-link">FIFA World Cup 2026™</a>
+        </li>
+    </ul>
+        <div class="hamburger">
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+
+
+        </div>
+        
+        
+        </nav>
+</header>

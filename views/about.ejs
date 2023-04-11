@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/public/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   <%- include('partials/style') %>
 </head>
-<body>
-    <h3 class="about">Look no further, as our website is your ultimate guide to all things related to the World Cup 2026 host cities. Whether you are a football fan, a travel enthusiast, or simply curious about the event, we have you covered!
+<body class="about">
+    <h1>World Cup 2016 Host Cities</h1>
+
+    <%- include('partials/header') %>
+    <h3 class="about-text">Look no further, as our website is your ultimate guide to all things related to the World Cup 2026 host cities. Whether you are a football fan, a travel enthusiast, or simply curious about the event, we have you covered!
             
         On this website, you will find comprehensive information about each of the host cities, including must-see places, weather conditions, and tips on planning your stay during game days. Our team of experts has curated a wealth of information to help you make the most of your World Cup experience.
         
@@ -19,6 +20,21 @@
         Join us on this thrilling journey as we explore the World Cup 2026 host cities together. Let's make your World Cup experience an unforgettable one!
         
         Start exploring now and get ready to immerse yourself in the excitement of the World Cup 2026!</h3>
+
+        
+        <div>
+            <ul>
+                <li>
+                    <a class="ball-flag-us" href="/cities/us"><img src="/public/images/dreamstime_l_164237646.jpg" alt="us flag" width="100px"></a>
+                </li>
+                <li>
+                    <a class="ball-flag-can" href="/cities/can"><img src="/public/images/dreamstime_l_164232963.jpg" alt="us flag" width="100px"></a>
+                </li>
+                <li>
+                    <a class="ball-flag-mex" href="/cities/mex"><img src="/public/images/dreamstime_l_164236001.jpg" alt="us flag" width="100px"></a>
+                </li>
+            </ul>
+                </div>
 </body>
 </html>
 
