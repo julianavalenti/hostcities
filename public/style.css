@@ -7,6 +7,10 @@ body {
     position: relative;
 }
 
+h1{
+    color:#B9BABA;
+  
+}
 .top-menu {
     background-color: rgb(31,72,144);
    
@@ -44,17 +48,22 @@ body {
 
 @media screen and (max-width: 390px) 
 { 
+    body {
+        margin-left:0;
+    }
 .banner {
-    width: 300px
+    width: 390px
 }    
 
 /* Place the top-menu at the bottom of the page, and make it stick */
 .top-menu {
-    background-color: #333;
+    background: #917C09;
     overflow: hidden;
-    position: fixed;
+    position: fixed ;
     bottom: 0;
     width: 100%;
+ 
+    
   }
   
   /* Style the links inside the navigation bar */
@@ -65,7 +74,10 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
+    
+
+    
   }
   
   /* Change the color of links on hover */
@@ -78,6 +90,7 @@ body {
   .top-menu a.active {
     background-color: #04AA6D;
     color: white;
-  }
 
+  }
+  
 }
