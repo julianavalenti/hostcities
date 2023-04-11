@@ -1,27 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
 <html>
 <head>
     <title>Host Cities</title>
     
-    
+  
 </head>
 <body>
-    <nav>
-        <a href="/cities">HOME</a>
-        <a href="https://www.fifa.com/fifaplus/en/home">FIFA World Cup 2026™</a>
-        <a href="https://www.fifa.com/fifaplus/en/tickets">TICKETS</a>
+    <div class="container">
         
-        <% if (currentUser) { %>
-        
-            <a href="/sessions/account">MY ACCOUNT</a> 
-            <a href="/sessions/logout">LOGOUT</a> 
-
-         <%}else { %>
-            <a href="/sessions/login">LOGIN</a>
-            <a href="/users/register">REGISTER</a>
-         <% } %>
-        </nav>
-
+        <nav class="top-menu">
+            <a href="/cities">HOME</a>
+            <a href="https://www.fifa.com/fifaplus/en/home">FIFA World Cup 2026™</a>
+            <a href="https://www.fifa.com/fifaplus/en/tickets">TICKETS</a>
+            
+            <% if (currentUser) { %>
+            
+                <a href="/sessions/account">MY ACCOUNT</a> 
+                <a href="/sessions/logout">LOGOUT</a> 
+    
+             <%}else { %>
+                <a href="/sessions/login">LOGIN</a>
+                <a href="/users/register">REGISTER</a>
+             <% } %>
+            </nav>
+            </div>
+            
+    <div class="banner">
+        <img src="/public/images/dreamstime_l_136805601.jpg" alt="Banner Image" >
+      </div>
+      
     <h1>Host Cities</h1>
      <nav>
         <a href="/users/register">REGISTER HERE</a>
@@ -33,6 +50,9 @@
         <a href="/cities/mex">MEXICO</a>
     </nav>
         
+
+</body>
+</html>
 
 </body>
 </html>
