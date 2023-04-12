@@ -13,7 +13,7 @@
 
      <h1>MEXICO</h1>
      <nav class="cities"><% cities.forEach(city => { %>
-         <% if (city.country === "United States") { %>
+         <% if (city.country === "Mexico") { %>
           <ul>
              
              <li list-style-image:  ;><a href="/us"><%=city.city%></a></li>
@@ -23,5 +23,9 @@
              
          <% }); %>
  </nav>
+ <footer >
+    <a href="/cities/can">CANADA</a>
+    <a href="/cities/us">UNITED STATES</a>
+</footer>
 </body>
 </html>

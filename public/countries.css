@@ -111,15 +111,30 @@ margin: 30px;
 }
 
 footer {
-    position:relative;
-       
-       text-align: center;    
-       
-       
+    min-height: 70px;
+    display: flex;
+    justify-content:center;
     
+    gap: 20px;
+   
+    /* padding: 0 24px; */
+    /* float: center; */
+   
+       
 }
 
 footer a {
-    position: absolute;
-    gap:10px;
+    display: flex;
+    margin-top: 1000px;
+    margin-left: 500px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgba(12, 12, 98, 0.858);
+    transition: 0.7s ease ;
+    
+}
+
+footer a:hover {
+color: brown;
 }
