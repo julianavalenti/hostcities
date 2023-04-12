@@ -42,4 +42,12 @@ citiesRouter.get('/mex', async (req, res) => {
     }
     );
 }); 
+
+citiesRouter.get('/:id', async (req, res) => {
+	const foundCity = await City.findById(req.params.id).exec()
+    res.render('show.ejs', {
+        city: foundCity,
+    });
+}); 
+
 module.exports = citiesRouter

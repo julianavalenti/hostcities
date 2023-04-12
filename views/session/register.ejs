@@ -4,18 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/register.css">
     <title>Document</title>
 </head>
 <body>
     
-    <nav>
-        <a href="/cities">HOME</a>
-        <a href="https://www.fifa.com/fifaplus/en/home">FIFA World Cup 2026™</a>
-        <a href="https://www.fifa.com/fifaplus/en/tickets">TICKETS</a>
-        <a href="/sessions/account">MY ACCOUNT</a> 
-        <a href="/sessions/logout">LOGOUT</a> 
-     </nav>   
+    <header class="container">
+        
+        <nav class="navbar">
+            <a href="/cities/about" class="nav-branding">Host Cities </a>
+           
+    
+            <ul class="nav-menu">
+    
+            
+            <li class="nav-item">
+                <a href="/cities" class="nav-link">HOME</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="https://www.fifa.com/fifaplus/en/tickets" class="nav-link">TICKETS</a>
+            </li>
+            <% if (currentUser) { %>
+                <li class="nav-item">
+                    <a href="/sessions/account" class="nav-link">MY ACCOUNT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sessions/logout" class="nav-link">LOGOUT</a>
+                </li>
+                
+    
+             <%}else { %>
+    
+                <li class="nav-item">
+                    <a href="/sessions/login" class="nav-link">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/users/register" class="nav-link">REGISTER</a>
+                </li>
+              
+             <% } %>
+             <li class="nav-item">
+                <a href="https://www.fifa.com/fifaplus/en/home" class="nav-link">FIFA World Cup 2026™</a>
+            </li>
+        </ul>
+            <div class="hamburger">
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+                <span class="bar"> </span>
+    
+    
+            </div>
+            
+            
+            </nav>
+    </header>
 
     <form method="POST" action="/users/register">
         <label for="name">Name:</label>
@@ -33,6 +78,9 @@
       <button type="submit">Register</button>
     </form>
     <a href="/sessions/login">Already have an account?</a>
+    
+
+
     
 </body>
 </html>
