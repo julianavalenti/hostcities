@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <%- include('partials/countries-style') %>
 </head>
 <body>
-    <h1><%=city.city %></h1>
-    <h3><%=city.history  %></h3>
+    <%- include('partials/header') %>
+    <h1><%= city.city %></h1>
+    <% if (city.picture !== "") { %>
+        <img class ="city-picture" src="<%= city.picture %>" alt="City Picture" width="400px">
+    <% } %>
+    HISTORY: <h3><%= city.history %></h3>
+    TEMPERATURE: <h3><%= city.temperature %></h3>
+    TRANSPORTATION: <h3><%= city.transportation%></h3>
+
+    <h1>Must see in <%= city.city %>:</h1>
+
+    <ul>
+        <% city.mustSee.forEach(mustSee => { %>
+            <li><%= mustSee.name %></li>
+            <li><img class="city-picture" src="<%= mustSee.img %>" alt="City Picture" width="400px"></li>
+            <li><%= mustSee.admissionFee %></li>
+            <li><%= mustSee.category %></li>
+            <li><a href="<%= mustSee.website %>">Official Website</a></li>
+            <li>
+                <nav>
+                    <% if (currentUser) { %>
+                        <form action="/users/list" method="POST">
+                            <input type="submit" name="" id="" value="save">
+                        </form>
+                    <% } else { %>
+                        <button><a href="/sessions/login">Login to save</a></button>
+                    <% } %>
+                </nav>
+            </li>
+        <% }); %>
+    </ul>
+    
+    
+    
 </body>
 </html>

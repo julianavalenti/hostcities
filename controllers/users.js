@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const userRouter = express.Router();
 const User = require('../models/user.js');
+const City = require("../models/cities.js")
 
 
 userRouter.get('/register', (req, res)=> {
@@ -21,6 +22,9 @@ userRouter.post('/register', async (req, res) => {
       res.status(500).send('Error creating user');
     }
   });
+
+  
+
 
 
 module.exports = userRouter;

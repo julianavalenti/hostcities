@@ -261,15 +261,16 @@ const hostCityData = [
      
      {
             city: "Dallas",
+            picture: "https://assets.dmagstatic.com/wp-content/uploads/media/4/frontburner_heart_city_skyline.jpg",
             country: "United States",
-            history:
-              " - Founding of Dallas in 1841 by John Neely Bryan. Incorporation as a city in 1856. Growth as a major trading center in the late 19th century due to its location on the railroads.The assassination of President John F. Kennedy in Dallas in 1963, which left a lasting impact on the city's history. Economic growth and development in the late 20th and early 21st centuries, making Dallas a major metropolitan area in the United States.",
+            history: "Founding of Dallas in 1841 by John Neely Bryan. Incorporation as a city in 1856. Growth as a major trading center in the late 19th century due to its location on the railroads.The assassination of President John F. Kennedy in Dallas in 1963, which left a lasting impact on the city's history. Economic growth and development in the late 20th and early 21st centuries, making Dallas a major metropolitan area in the United States.",
             temperature: "Summers in Dallas are hot and humid, with average high temperatures ranging from the 90s to over 100°F (32-38°C) during the months of June to August.  Winters in Dallas are mild with average high temperatures ranging from the 50s to 60s°F (10-20°C) during the months of December to February. Spring and fall seasons in Dallas are generally pleasant, with mild temperatures ranging from the 60s to 80s°F (15-27°C).",
             transportation:   "Dallas has a well-developed highway system, with several major highways intersecting in the city, including Interstate 20, Interstate 30, Interstate 35E, and Interstate 45. Dallas has a public transportation system known as Dallas Area Rapid Transit (DART), which includes light rail, buses, and a streetcar line. Dallas/Fort Worth International Airport (DFW) is one of the largest airports in the world and serves as a major hub for domestic and international flights. Dallas Love Field (DAL) is another airport located in the city that primarily serves regional and domestic flights. Dallas is known for its extensive network of toll roads, which are managed by the North Texas Tollway Authority (NTTA) and provide additional transportation options for commuters.",
     
             mustSee: [
               {
                 name: "The Sixth Floor Museum at Dealey Plaza",
+                img:"https://tdr.aaa.com/tdr-images/variation/1693044?ratio=9:6&rwidth=500",
                 openHours: "Tuesday-Sunday: 10:00 AM - 5:00 PM, Monday: Closed",
                 admissionFee: "USD 18 for adults, USD 14 for children (6-18)",
                 category: "Indoor",
@@ -277,6 +278,7 @@ const hostCityData = [
               },
               {
                 name: "Dallas Museum of Art",
+                img:"https://tdr.aaa.com/tdr-images/variation/214542?ratio=9:6&rwidth=500",
                 openHours: "Tuesday-Sunday: 11:00 AM - 5:00 PM, Thursday: 11:00 AM - 9:00 PM (Closed on Mondays)",
                 admissionFee: "Free",
                 category: "Indoor",
@@ -284,6 +286,7 @@ const hostCityData = [
               },
               {
               name: "Dallas World Aquarium",
+              img:"https://echotransportation.com/wp-content/uploads/2017/08/Dallas-World-Aquarium-2.jpg",
               openHours: "Sunday-Saturday: 10:00 AM - 5:00 PM",
               admissionFee: "USD 26.95 for adults, USD 17.95 for children (2-12)",
               category: "Indoor",
@@ -291,6 +294,7 @@ const hostCityData = [
               },
               {
             name: "Dallas Arboretum and Botanical Garden",
+            img: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/507000/507550-dallas-arboretum-and-botanical-garden.jpg",
             openHours: "Sunday-Saturday: 9:00 AM - 5:00 PM",
             admissionFee: "USD 17 for adults, USD 14 for children (2-12)",
             category: "Outdoor",
@@ -298,6 +302,7 @@ const hostCityData = [
               },
               {
             name: "Perot Museum of Nature and Science",
+            img:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Perot_Museum_Alamosaurus.jpg/1024px-Perot_Museum_Alamosaurus.jpg",
             openHours: "Monday-Saturday: 10:00 AM - 5:00 PM, Sunday: 12:00 PM - 5:00 PM",
             admissionFee: "USD 20 for adults, USD 13 for children (2-12)",
             category: "Indoor",
@@ -305,6 +310,7 @@ const hostCityData = [
               },
               {
             name: "Klyde Warren Park",
+            img:"https://klydewarrenpark.imgix.net/about/Aerial.jpg",
             openHours: "Sunday-Saturday: 6:00 AM - 11:00 PM",
             admissionFee: "Free",
             category: "Outdoor",
