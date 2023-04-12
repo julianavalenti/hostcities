@@ -1,0 +1,125 @@
+html {
+   
+        margin: 0;
+        position: relative;
+        background-color: white;
+        
+        background-image: url("/public/images/background-neutral.jpg");
+      
+        background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      
+        height: 100%;
+    }
+
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    float: right;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    color: rgba(12, 12, 98, 0.858);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-link {
+    transition: 0.7s ease ;
+    color: rgba(12, 12, 98, 0.858);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-link:hover {
+    color: rgb(214, 233, 15);
+}
+
+.hamburger {
+    display: none ;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 500px;
+    position: absolute;
+    font-size: 100px;
+    color: rgb(117, 27, 4);
+
+}
+
+.cities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 0px;
+    background-color: rgba(241, 240, 248, 0.4);
+    
+    margin: 400px;
+    margin-top: 400px;
+    position: absolute;
+    box-shadow: 21px 18px 48px -1px rgba(0,0,0,0.39);
+
+}
+
+.cities a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: 0.7s ease ;
+    
+    
+}
+.cities a:hover{
+    color: rgb(0, 42, 255);
+    
+}
+.cities li {
+    list-style: none;
+    
+column-gap: 30px;
+line-height: 2px;
+list-style-image: url("/public/images/ball-icon.png" );
+margin: 30px;
+
+}
+
+footer {
+    position:relative;
+       
+       text-align: center;    
+       
+       
+    
+}
+
+footer a {
+    position: absolute;
+    gap:10px;
+}

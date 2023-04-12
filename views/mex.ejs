@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/countries-style') %>
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <a href="/cities">HOME</a>
-        <a href="https://www.fifa.com/fifaplus/en/home">FIFA World Cup 2026™</a>
-        <a href="https://www.fifa.com/fifaplus/en/tickets">TICKETS</a>
-        <a href="/sessions/account">MY ACCOUNT</a> 
-        <a href="/sessions/logout">LOGOUT</a> 
-     </nav>   
+    <%- include('partials/header') %>
+    
 
-    <h2>Mexico</h2>
-        <% cities.forEach(city => { %>
-        <% if (city.country === "Mexico") { %>
-            <a href="/mex"><%=city.city%></a>
-        <% } %>
-   
-        <% }); %>
-        <nav>
-            <a href="#">WHERE TO STAY</a>
-            <a href="#">WHERE TO EAT</a>
-         </nav>
+     <h1>MEXICO</h1>
+     <nav class="cities"><% cities.forEach(city => { %>
+         <% if (city.country === "United States") { %>
+          <ul>
+             
+             <li list-style-image:  ;><a href="/us"><%=city.city%></a></li>
+          </ul>
+             
+         <% } %>  
+             
+         <% }); %>
+ </nav>
 </body>
 </html>
