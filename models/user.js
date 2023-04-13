@@ -6,7 +6,13 @@ const userSchema = Schema({
     name: { type: String, required: true},
     phone: {type: Number, required: true} ,
     email: { type: String, unique: true, required: true },
-    password: { type: String, required: true }
+    password: { type: String, required: true },
+
+    saves: [
+        {
+            type: Schema.Types.ObjectId,ref: "MustSee"
+        }
+    ]
 });
 
 // User Model

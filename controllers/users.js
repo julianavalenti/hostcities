@@ -23,8 +23,17 @@ userRouter.post('/register', async (req, res) => {
     }
   });
 
-  
+  // Will did this one. Will really DID this one
 
+userRouter.post('/saves', async (req,res) => {
+   req.body.mustSeeId 
+   User.findbyIdAndUpdate(
+   req.session.currentUser._id,
+   {$push: {saves: req.body.mustSeeId}}
+   )
+
+   res.redirect("/cities")
+})
 
 
 module.exports = userRouter;

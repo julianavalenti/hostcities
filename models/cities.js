@@ -1,3 +1,4 @@
+require("./mustSee")
 const mongoose = require('mongoose');
 
 
@@ -13,12 +14,7 @@ const citiesSchema = new Schema(
         transportation: { type: String },
         mustSee: [
             {
-                name: { type: String },
-                img: {type: String, required: false},
-                openHours: { type: String },
-                admissionFee: { type: String },
-                category: { type: String },
-                website: { type: String }
+                type: Schema.Types.ObjectId,ref: "MustSee"
             }
         ]
     }
