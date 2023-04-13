@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="/public/register.css">
     <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -21,39 +23,33 @@
     <%- include('partials/header-main') %>
         
 
-    <nav class="intro">
-        <h1 class="intro-title">Welcome to the World Cup 2026 Host Cities!</h1>
-<h2 class="intro-sub">Are you excited about the upcoming World Cup 2026 and eager to plan your trip to the host cities?</h2>
-             
-        <h3 class="intro-text">
-            
-            On this website, you will find comprehensive information about each of the host cities, including must-see places, weather conditions, and tips on planning your stay during game days. Our team of experts has curated a wealth of information to help you make the most of your World Cup experience. Start exploring now for an unforgettable World Cup experience!
-            
-            </h3>
-            <div class="register-btn" >
-                <a class="btn-link" href="/users/register" class="nav-link">REGISTER</a>
-            </div>
-            
-            
-        
-    </nav>
+    
+
+    <div class="btn-flex">
+        <h1>Login to Your Account</h1>
+	<form class="register-form"  action="/sessions/login" method="POST">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<br>
+        <button class="register-btn" type="submit" value="Login">Login</button>
+		
+        <% if (typeof message !== "undefined") { %>
+            <p><%= message %></p>
+        <% } %>
+	</form>
+
+    <a href="/users/register">Don't have an account? </a>
+</div>
 
 
     
 </body>
 </html>
 <footer>
-    <ul class="countries">
-<li>
-    <a class="country-link" href="/cities/us">UNITED STATES</a>
-</li>
-<li>
-    <a class="country-link"href="/cities/can">CANADA</a>
-</li>
-<li>
-    <a class="country-link" href="/cities/mex">MEXICO</a>
-</li>
-    </ul>
+ 
     
      
 
@@ -67,3 +63,6 @@
 </footer>
 </body>
 </html>
+
+
+

@@ -6,7 +6,7 @@ const City = require("../models/cities.js")
 
 
 userRouter.get('/register', (req, res)=> {
-    res.render('./session/register.ejs')
+    res.render('./register.ejs')
 })
 
 

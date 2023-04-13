@@ -5,7 +5,7 @@ const User = require('../models/user.js');
 
 //I
 sessionsRouter.get('/login', (req, res)=> {
-    res.render('./session/login.ejs')
+    res.render('login.ejs')
 })
 
 //D
@@ -93,7 +93,7 @@ sessionsRouter.post('/login', async (req, res) => {
     const foundUser = await User.findById(
         req.params.id,
         );
-    res.render("session/edit.ejs", {
+    res.render("edit.ejs", {
         user: foundUser,
     })
 })
@@ -101,7 +101,7 @@ sessionsRouter.post('/login', async (req, res) => {
 
   sessionsRouter.get('/account', (req, res) => {
 	
-    res.render('session/account.ejs', {
+    res.render('account.ejs', {
         
     });
 }); 

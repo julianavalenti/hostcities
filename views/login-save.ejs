@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,22 +23,21 @@
     <%- include('partials/header-main') %>
         
 
-    <nav class="intro">
-        <h1 class="intro-title">Welcome to the World Cup 2026 Host Cities!</h1>
-<h2 class="intro-sub">Are you excited about the upcoming World Cup 2026 and eager to plan your trip to the host cities?</h2>
-             
-        <h3 class="intro-text">
-            
-            On this website, you will find comprehensive information about each of the host cities, including must-see places, weather conditions, and tips on planning your stay during game days. Our team of experts has curated a wealth of information to help you make the most of your World Cup experience. Start exploring now for an unforgettable World Cup experience!
-            
-            </h3>
-            <div class="register-btn" >
-                <a class="btn-link" href="/users/register" class="nav-link">REGISTER</a>
-            </div>
-            
-            
-        
-    </nav>
+    <h1>Login to Your Account</h1>
+	<form action="/sessions/login" method="POST">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<br>
+		<input type="submit" value="Login">
+        <% if (typeof message !== "undefined") { %>
+            <p><%= message %></p>
+        <% } %>
+	</form>
+    <a href="/users/register">Don't have an account? </a>
+
 
 
     
@@ -67,3 +68,6 @@
 </footer>
 </body>
 </html>
+
+
+

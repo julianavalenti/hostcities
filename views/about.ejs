@@ -5,15 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="/public/pages.css">
-   <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
+    <%- include('partials/style') %>
 </head>
-<body class="about">
-    <img class="top-banner" src="/public/images/banner.jpg"   alt="">
-    <h1>World Cup 2016 Host Cities</h1>
-
+<body >
     <%- include('partials/header') %>
+   
+    <h1>World Cup 2016 Host Cities</h1>
+    <div class="ball-flags">
+        <ul>
+            <li>
+                <a class="ball-flag-us" href="/cities/us"><img src="/public/images/dreamstime_l_164237646.jpg" alt="us flag" width="100px"></a>
+            </li>
+            <li>
+                <a class="ball-flag-can" href="/cities/can"><img src="/public/images/dreamstime_l_164232963.jpg" alt="us flag" width="100px"></a>
+            </li>
+            <li>
+                <a class="ball-flag-mex" href="/cities/mex"><img src="/public/images/dreamstime_l_164236001.jpg" alt="us flag" width="100px"></a>
+            </li>
+        </ul>
+            </div>
+   
     <h3 class="about-text">Look no further, as our website is your ultimate guide to all things related to the World Cup 2026 host cities. Whether you are a football fan, a travel enthusiast, or simply curious about the event, we have you covered!
             
         On this website, you will find comprehensive information about each of the host cities, including must-see places, weather conditions, and tips on planning your stay during game days. Our team of experts has curated a wealth of information to help you make the most of your World Cup experience.
@@ -25,19 +36,7 @@
         Start exploring now and get ready to immerse yourself in the excitement of the World Cup 2026!</h3>
 
         
-        <div class="ball-flags">
-            <ul>
-                <li>
-                    <a class="ball-flag-us" href="/cities/us"><img src="/public/images/dreamstime_l_164237646.jpg" alt="us flag" width="100px"></a>
-                </li>
-                <li>
-                    <a class="ball-flag-can" href="/cities/can"><img src="/public/images/dreamstime_l_164232963.jpg" alt="us flag" width="100px"></a>
-                </li>
-                <li>
-                    <a class="ball-flag-mex" href="/cities/mex"><img src="/public/images/dreamstime_l_164236001.jpg" alt="us flag" width="100px"></a>
-                </li>
-            </ul>
-                </div>
+       
 </body>
 </html>
 

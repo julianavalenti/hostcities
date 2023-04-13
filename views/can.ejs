@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include('partials/countries-style') %>
+    
     <title>Document</title>
 </head>
 <body>
     <%- include('partials/header') %>
-    
-
      <h1>CANADA</h1>
      <nav class="cities"><% cities.forEach(city => { %>
          <% if (city.country === "Canada") { %>

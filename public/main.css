@@ -57,6 +57,19 @@ html {
       color: rgb(214, 233, 15);
   }
   
+  .hamburger {
+      display: none ;
+      cursor: pointer;
+  }
+  .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+  }
   
   .banner img {
      max-width: 2050px;
@@ -65,10 +78,59 @@ html {
      border-top-left-radius: 20%;
   }
   
+  .intro {
+      
+      display: grid;
+      box-sizing: border-box;
+      width: 100%;
+      float: right;
+      text-align: right;
+  }
   
-  /* index is the background picture */
-
-  .index { 
+  .intro-title {
+      display: inline;
+      align-items: right;
+      font-family: 'Bebas Neue', cursive;
+     font-weight: 200;
+      font-size: 45px;
+      margin-right: 85px;
+      margin-top: 100px;
+    
+      color: rgb(246, 241, 241) ;
+      height: 200px;
+      float: right;
+      
+  }
+  .intro-text {
+  font-family:'Mandali', sans-serif ;
+  font-size: 20px;
+  text-align: right;
+  color: whitesmoke;
+  padding-left: 1300px;
+  padding-right: 100px;
+  margin-top: 60px;
+  text-align: justify;
+  line-height: calc(1ex / 0.25);
+  
+  }
+  .intro-sub {
+      font-family: 'Chathura', sans-serif;
+      font-size: 40px;
+      color: whitesmoke;
+      position: absolute;
+      padding-top: 100px;
+      padding-left: 1350px;
+      padding-right: 140px;
+      text-align:center;
+      line-height: 40px;
+      margin-top: 150px;
+  }
+  
+  .intro img {
+      max-width: 400px;
+      float: right;
+  }
+  .index {
       margin: 0;
       position: relative;
       background-color: white;
@@ -123,13 +185,31 @@ html {
       color: rgb(149, 255, 0);
   }
   
+  .about{
+      background-color: rgb(23, 57, 123);
+      position: relative;
+  }
+  .about-text {
+      margin: 0;
+      position: absolute;
+      font-family:'Mandali', sans-serif ;
+      position: absolute;
+     background-color: white;
+     color: rgb(9, 9, 9);
+     align-items: center;
+     margin-top: 400px;
+     margin-bottom: 300px;
+     padding:200px;
+  
+      
+  }
   
   
   .register-btn{
   
- 
+  left:200px;
   font-family: 'Bebas Neue', cursive;
-    
+  font-weight: 0;
   font-size: 20px;
   color: #fff;
   background-color: #052e8651;
@@ -143,7 +223,8 @@ html {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  
+  margin-left: 1500px;
+  margin-right: 250px;
   
   }
   
@@ -161,46 +242,49 @@ html {
       text-align: center;
       padding-left: 85px;
   }
-
-
-  .register-form {
-   
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 0;
-    font-size: 20px;
-    color: #fff;
-    background-color: #052e8651;
-    padding: 10px 10px;
-    /* border: solid #f2f2f2 2px; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
-    width: 100%;
-    transition : 1000ms;
-    transform: translateY(0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    /* margin-left: 1500px;
-    margin-right: 250px; */
+  
+  .ball-flag-us {
+      align-items: center;
+      position: absolute;
+      margin-top: 450px;
+      margin-left: 800px;
+      justify-content: space-between;
+      align-items: center;
+      gap:40px;
+      
   }
-    .register-form input {
-    padding: 5px;
-    width: 300 px;
-    }
-   
-    .btn-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        position: absolute;
-        left:1600px;
-        top:300px;
-    }
+  
+  .ball-flag-can {
+      align-items: center;
+      position: absolute;
+      margin-top: 450px;
+      margin-left: 600px;
+      justify-content: space-between;
+      align-items: center;
+      gap:40px;
+      
+  }
+  
+  .ball-flag-mex {
+      align-items: center;
+      position: absolute;
+      margin-top: 450px;
+      margin-left: 1000px;
+      justify-content: space-between;
+      align-items: center;
+      gap:40px;
+      
+  }
+  
+  .about h1 {
+      color: #f8fafa;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 100px;
+      margin-top: 200px;
+      position: absolute;
+      margin-left: 500px;
+      text-shadow: 2px 2px 4px rgb(69, 197, 19);
+  }
+  
 
-    h1 {
-        color: #fff;
-        font-family: 'Bebas Neue', cursive;
-    }
   
