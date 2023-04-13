@@ -63,7 +63,12 @@ a {
 
 .nav-branding {
     font-size: 2rem;
+    color: #39e816;
 
+}
+
+.nav-branding a {
+    color: #39e816;
 }
 
 .nav-link {
