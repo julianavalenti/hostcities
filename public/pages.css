@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body {
+    background-color: white;
+    position: relative;
+   
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    float: right;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    color: rgba(12, 12, 98, 0.858);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+   
+}
+
+.nav-link {
+    transition: 0.7s ease ;
+    color: rgba(248, 248, 250, 0.858);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(214, 233, 15);
+}
+
+.hamburger {
+    display: none ;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.top-banner {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    justify-items: center;
+    align-items: center;
+}
+li {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .ball-flags {
+background-color: antiquewhite;
+margin-right:800px;
+margin-left: 800px;
+
+position: absolute;
+
+  }
+  li img {
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+h3 {
+    margin-top: 400px;
+    padding: 200px;
+    font-family:'Mandali', sans-serif ;
+}
+
+h1 {
+    
+}

@@ -4,8 +4,14 @@ html {
   margin: 0;
 height: 100%;
   box-sizing: border-box ;
+  position: relative;
 }
 
+.top-menu {
+    
+    height: 600px;
+     width:  2200px;
+}
 header {
     background: white;
 }
@@ -27,6 +33,7 @@ a {
     align-items: center;
     padding: 0 24px;
     float: right;
+    position: relative;
 }
 
 .nav-menu {
@@ -34,6 +41,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+    
 }
 
 .nav-branding {

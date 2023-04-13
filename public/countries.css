@@ -13,7 +13,9 @@ html {
       
         height: 100%;
     }
-
+.top-banner {
+    position: relative;
+}
 
 .navbar {
     min-height: 70px;
@@ -140,7 +142,7 @@ footer {
 footer a {
     display: flex;
     margin-top: 1000px;
-    margin-left: 700px;
+    margin-left: 500px;
     
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
