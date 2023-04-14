@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <%- include('partials/header') %>
     <h1>Edit Plan</h1>
     <form action="/sessions/<%=plan._id%>?_method=PUT" method="POST">
       
@@ -15,6 +19,7 @@
      Comments: <input type="text" name="comments" value="<%=plan.comments%>" /><br />
       
       <input type="submit" value="Submit Changes" />
+      <a href="/sessions/myplan">Back to My Trip </a>
     </form>
 </body>
 </html>

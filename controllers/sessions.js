@@ -22,6 +22,13 @@ sessionsRouter.get('/logout', (req, res) => {
     });
 });
 
+
+// delete plan 
+
+sessionsRouter.delete('/:id', async (req,res) => {
+    await Plan.findByIdAndDelete(req.params.id)
+    res.redirect('/sessions/plan')
+})
 //U
 
 sessionsRouter.put('/edit', async (req, res) => {
@@ -110,7 +117,7 @@ sessionsRouter.post('/login', async (req, res) => {
 
   sessionsRouter.post('/plan', (req,res) =>{
     const createdPlan = new Plan (req.body)
-    createdPlan.save().then(res.redirect('/myplan'))
+    createdPlan.save().then(res.redirect('/sessions/myplan'))
 })
   
   //E

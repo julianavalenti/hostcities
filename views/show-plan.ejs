@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <%- include('partials/header') %>
     <h1>MY TRIP PLAN</h1>
     <ul>
         <% plans.forEach(plan => { %>
@@ -14,7 +18,11 @@
         <h3><%=plan.todo%></h3>
         <h3><%=plan.comments%></h3>
         <a href="/sessions/<%=plan._id%>/edit">Edit</a>
+        <form action="/sessions/<%=plan.id%>?_method=DELETE" method="POST">
+            <input type="submit" name="" id="" value="DELETE">
         <% }) %>
     </ul>
+    <a href="/sessions/plan">Add New Plan </a>
+    <a href="/cities">back to Home Page</a>
 </body>
 </html>

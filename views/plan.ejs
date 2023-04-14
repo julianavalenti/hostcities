@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <%- include('partials/header') %>
     <form action="/sessions/plan" method="POST">
     City: <input type="text" name="city" id="" value="City">
     To-Do: <input type="text" name="todo" id="" value="ToDo">
@@ -14,5 +18,9 @@
     <input type="submit" name="" id="">
 </form>
 <a href="/sessions/myplan"> MY SAVED PLANS</a>
+<a href="/cities">back to Home Page</a>
+
+
+    
 </body>
 </html>
