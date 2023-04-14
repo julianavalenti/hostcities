@@ -2,11 +2,14 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const sessionsRouter = express.Router();
 const User = require('../models/user.js');
+const Plan = require('../models/plans.js')
 
 //I
 sessionsRouter.get('/login', (req, res)=> {
     res.render('login.ejs')
 })
+
+
 
 //D
 sessionsRouter.get('/logout', (req, res) => {
@@ -63,6 +66,7 @@ sessionsRouter.put('/password', async (req, res) => {
 
 //C
 
+
 sessionsRouter.post('/login', async (req, res) => {
     try {
       const foundUser = await User.findOne({ email: req.body.email });
@@ -87,6 +91,13 @@ sessionsRouter.post('/login', async (req, res) => {
     }
   });
 
+  //create new trip plan 
+
+  sessionsRouter.post('/plan', (req,res) =>{
+    const createdPlan = new Plan (req.body)
+    createdPlan.save().then(res.redirect('/cities'))
+})
+  
   //E
 
   sessionsRouter.get("/edit", async (req,res) => {
@@ -105,5 +116,15 @@ sessionsRouter.post('/login', async (req, res) => {
         
     });
 }); 
+
+sessionsRouter.get('/plan', (req, res) => {
+	
+    res.render('plan.ejs', {
+        
+    });
+}); 
+
+
+
 
 module.exports = sessionsRouter;

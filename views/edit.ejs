@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%- include('partials/style') %>
+    <link rel="stylesheet" href="/public/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -17,24 +19,25 @@
         <a href="/sessions/logout">LOGOUT</a> 
      </nav>   
 
-    <h1>Personal information</h1>
-
-    <form action="/sessions/edit?_method=PUT" method="POST">
+    <h1 class="info-title">Personal information</h1>
+<div class="edit-info">
+    <form class="edit-form" action="/sessions/edit?_method=PUT" method="POST">
       
-        Name <input type="text" name="name" value="<%=currentUser.name%>" /><br />
+        Name: <input type="text" name="name" value="<%=currentUser.name%>" /><br />
         Phone: <input type="number" name="phone" value="<%=currentUser.phone%>" /><br />
         Email: <input type="text" name="email" value="<%=currentUser.email%>" /><br />
-        
+     
         
         <br />
-        <input type="submit" value="Submit Changes" />
+        <input class="edit-btn-type" type="submit" value="Submit Changes" />
       </form>
    
-    <form action="/sessions/password?_method=PUT" method="POST">
+    <form class="password-form" action="/sessions/password?_method=PUT" method="POST">
         New Password: <input type="password" name="newPassword" /><br />
         
         <br />
-        <input type="submit" value="Submit New password" />
+        <input class="password-btn-type" type="submit" value="Submit New password" />
     </form>
+</div>
 </body>
 </html>

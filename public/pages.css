@@ -226,3 +226,113 @@ h2 {
   .see-p {
     margin-left:700px;
   }
+
+  .edit-btn {
+    color: #09df29;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  .edit-session {
+    align-items: center;
+    margin-left: 700px;
+  }
+
+  .form-container {
+    width: 300px; 
+   
+    border: 1px solid #000;
+    padding: 20px; 
+  }
+
+ 
+  form {
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  .ul-edit {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  .li-edit {
+    margin-bottom: 10px; 
+    font-size: 30px;
+    color: rgb(6, 96, 33);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+.edit-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 500px;
+    gap: 100px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: darkgreen;
+    width: 800px;
+}
+
+.user-info {
+    font-family: 'Bebas Neue', cursive;
+    color: #2509df;
+    font-size: 20px;
+    line-height: 30px;
+}
+  .edit-form input {
+    width: 200px;
+    height: 40px;
+   margin: 10px;
+   text-align: center;
+   border-radius: 30px;
+   
+  }
+
+  .form-container {
+    width: 600px;
+  }
+
+  .password-form input {
+    width: 200px;
+    height: 40px;
+   margin: 10px;
+   text-align: center;
+   border-radius: 30px;
+
+   
+
+  }
+
+  
+
+  .edit-btn-type {
+    background-color: #09df29;
+    border: none;
+    margin-left: 100px;
+    position: absolute;
+    left: 550px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+  }
+
+  .password-btn-type {
+    background-color: #09df29;
+    border: none;
+    margin-left: 100px;
+    position: absolute;
+    left: 980px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+  }
+
+  .info-title {
+    color: white;
+    text-shadow:  2px 1px 1px rgb(8, 55, 209);
+    background-color: #09df29;
+  }

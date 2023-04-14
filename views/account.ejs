@@ -11,22 +11,20 @@
 </head>
 <body>
     <%- include('partials/header') %>
-    <nav>
-        <a href="/cities">HOME</a>
-        <a href="https://www.fifa.com/fifaplus/en/home">FIFA World Cup 2026™</a>
-        <a href="https://www.fifa.com/fifaplus/en/tickets">TICKETS</a>
-        <a href="/sessions/account">MY ACCOUNT</a> 
-        <a href="/sessions/logout">LOGOUT</a> 
-     </nav>   
-
-    <h1>Personal information</h1>
-   <ul>
-    Name: <li><%=currentUser.name %></li> 
-    Phone: <li><%=currentUser.phone %></li>
-    Email: <li><%=currentUser.email %></li>
-    Password: <li>********</li>
-   </ul> 
-    <a href="/sessions/edit">Edit</a>
-
+    <h1 class="info-title" >Personal information</h1>
+ <div class="edit-session">
+    
+    <form class="form-container">
+        <ul class="ul-edit">
+          <div class="user-info">
+          <li class="li-edit">Name: <%=currentUser.name %></li> 
+          <li>Phone: <%=currentUser.phone %></li>
+          <li>Email: <%=currentUser.email %></li>
+          <li>Password: ********</li>
+          </div>
+        </ul> 
+      </form>
+    <a  class="edit-btn" href="/sessions/edit">Edit</a>
+</div>
 </body>
 </html>
