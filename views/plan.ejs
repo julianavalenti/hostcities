@@ -10,16 +10,23 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <h1 class="plan-name">MY TRIP PLAN</h1>
     <%- include('partials/header') %>
-    <form action="/sessions/plan" method="POST">
-    City: <input type="text" name="city" id="" value="City">
-    To-Do: <input type="text" name="todo" id="" value="ToDo">
-    Comments: <input type="text" name="comments" id="" value="Comments">
-    <input type="submit" name="" id="">
+    
+
+    <form class="try" action="/sessions/plan" method="POST">
+    City: <input type="text" name="city" id="" placeholder="City">
+    To-Do: <input type="text" name="todo" id="" placeholder="ToDo" value="">
+    Comments: <input type="text" name="comments" id="" placeholder="Comments">
+    <input  type="submit" name="" id="">
 </form>
+
+
+<div class="plan-page-btn">
 <a href="/sessions/myplan"> MY SAVED PLANS</a>
 <a href="/cities">back to Home Page</a>
-
+</div>
 
     
 </body>

@@ -336,3 +336,59 @@ h2 {
     text-shadow:  2px 1px 1px rgb(8, 55, 209);
     background-color: #09df29;
   }
+
+
+  .plan-page-btn a {
+    color: #a2df09;
+    margin-left: 400px;
+    padding: 10px;
+    display: inline;
+    top:500px;
+    gap:50px;
+    
+
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-form input {
+    width: 300px;
+    padding: 10px;
+  }
+
+  /* //delete btn  */
+  .plan-submit {
+    color:#df5409;
+    background-color: white;
+    margin-left: 400px;
+  }
+
+  .plan-name {
+    text-shadow: 3px 3px 6px rgba(9, 210, 46, 0.5);
+ position: absolute;
+ margin-top: 300px;
+    margin-bottom: 200px;
+    margin-left: 800px;
+    padding-bottom: 200px;
+  }
+
+  .plan-show {
+    position: absolute;
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  .plan-name-show {
+    text-shadow: 3px 3px 6px rgba(9, 210, 46, 0.5);
+ position: absolute;
+ /* margin-top: 100px; */
+    margin-bottom: 200px;
+    margin-left: 800px;
+    padding-bottom: 200px;
+  }
+
+  .buttons a {
+    color:blue ;
+    gap: 30px;
+  }

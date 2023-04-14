@@ -11,18 +11,26 @@
 </head>
 <body>
     <%- include('partials/header') %>
-    <h1>MY TRIP PLAN</h1>
+    <h1 class="plan-name-show">MY TRIP PLAN</h1>
+    
+    <div class="plan-show">
     <ul>
         <% plans.forEach(plan => { %>
         <h2><%=plan.city%></h2>
-        <h3><%=plan.todo%></h3>
-        <h3><%=plan.comments%></h3>
-        <a href="/sessions/<%=plan._id%>/edit">Edit</a>
+        <h3>To-Do: <%=plan.todo%></h3>
+        <h3>Comments: <%=plan.comments%></h3>
+        
+        <div class="plan-submit">
+        <a class="plan-submit" href="/sessions/<%=plan._id%>/edit">Edit</a>
         <form action="/sessions/<%=plan.id%>?_method=DELETE" method="POST">
-            <input type="submit" name="" id="" value="DELETE">
+            <input class="plan-submit" type="submit" name="" id="" value="DELETE">
+        </div>
         <% }) %>
     </ul>
+</div>
+    <div class="plan-page-btn" >
     <a href="/sessions/plan">Add New Plan </a>
     <a href="/cities">back to Home Page</a>
+</div>
 </body>
 </html>
