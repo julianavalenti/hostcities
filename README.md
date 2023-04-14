@@ -6,10 +6,10 @@ On this website, you will find comprehensive information about each of the host 
 
 ## Screenshots
 
-![App Screenshot](../home.jpg)
-![App Screenshot](../Captura%20de%20Tela%202023-04-14%20às%2010.34.32%20AM.jpg)
-![App Screenshot](../Captura%20de%20Tela%202023-04-14%20às%2010.34.15%20AM.jpg)
-![App Screenshot](../Captura%20de%20Tela%202023-04-14%20às%2010.35.09%20AM.jpg)
+![App Screenshot](home.jpg)
+![App Screenshot](Captura%20de%20Tela%202023-04-14%20às%2010.34.32%20AM.jpg)
+![App Screenshot](Captura%20de%20Tela%202023-04-14%20às%2010.34.15%20AM.jpg)
+![App Screenshot](Captura%20de%20Tela%202023-04-14%20às%2010.35.09%20AM.jpg)
 
 
 
