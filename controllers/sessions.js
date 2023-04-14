@@ -64,6 +64,20 @@ sessionsRouter.put('/password', async (req, res) => {
    
 });
 
+//update plan
+
+sessionsRouter.put("/:id", async (req,res)=> {
+    
+await Plan.findByIdAndUpdate(
+    req.params.id,
+    req.body,
+{
+    new:true
+}
+)
+res.redirect("/sessions/plan")
+})
+
 
 //C
 
@@ -109,7 +123,7 @@ sessionsRouter.post('/login', async (req, res) => {
         user: foundUser,
     })
 })
-
+//Edit  plan ... it works
 sessionsRouter.get("/:id/edit", async (req, res) => {
     const foundPlan = await Plan.findById(req.params.id)
       res.render("plan-edit.ejs", {
