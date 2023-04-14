@@ -95,7 +95,7 @@ sessionsRouter.post('/login', async (req, res) => {
 
   sessionsRouter.post('/plan', (req,res) =>{
     const createdPlan = new Plan (req.body)
-    createdPlan.save().then(res.redirect('/cities'))
+    createdPlan.save().then(res.redirect('/myplan'))
 })
   
   //E
@@ -111,7 +111,6 @@ sessionsRouter.post('/login', async (req, res) => {
   //S 
 
   sessionsRouter.get('/account', (req, res) => {
-	
     res.render('account.ejs', {
         
     });
@@ -123,6 +122,18 @@ sessionsRouter.get('/plan', (req, res) => {
         
     });
 }); 
+
+//show plan saved 
+
+sessionsRouter.get('/myplan', async (req, res) => {
+    const foundPlans = await Plan.find({}).exec(); // Fetch all plans from the database
+    res.render('show-plan.ejs', {
+        plans: foundPlans, // Pass the array of plans to the template
+    });
+});
+
+
+
 
 
 
