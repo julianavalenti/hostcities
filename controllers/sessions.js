@@ -64,6 +64,7 @@ sessionsRouter.put('/password', async (req, res) => {
    
 });
 
+
 //C
 
 
@@ -108,6 +109,15 @@ sessionsRouter.post('/login', async (req, res) => {
         user: foundUser,
     })
 })
+
+sessionsRouter.get("/:id/edit", async (req, res) => {
+    const foundPlan = await Plan.findById(req.params.id)
+      res.render("plan-edit.ejs", {
+        plan: foundPlan,
+      })
+    })
+
+
   //S 
 
   sessionsRouter.get('/account', (req, res) => {

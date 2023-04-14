@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Plan</h1>
+    <form action="/sessions/<%=plan._id%>?_method=PUT" method="POST">
+      
+      City: <input type="text" name="city" value="<%=plan.city%>" /><br />
+      To-do: <input type="text" name="todo" value="<%=plan.todo%>" /><br />
+     Comments: <input type="text" name="comments" value="<%=plan.comments%>" /><br />
+      
+      <input type="submit" value="Submit Changes" />
+    </form>
+</body>
+</html>
