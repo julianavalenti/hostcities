@@ -4,42 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chathura:wght@100&family=Italiana&display=swap" rel="stylesheet">
     <title>Document</title>
     
 </head>
 <body>
+    <div class="city-flex">
+
     <%- include('partials/header') %>
-    <h1><%= city.city %></h1>
+
+    <h1 class="city-title"><%= city.city %></h1>
     <% if (city.picture !== "") { %>
         <img class ="city-picture" src="<%= city.picture %>" alt="City Picture" width="400px">
     <% } %>
-    HISTORY: <h3><%= city.history %></h3>
-    TEMPERATURE: <h3><%= city.temperature %></h3>
-    TRANSPORTATION: <h3><%= city.transportation%></h3>
 
-    <h1>Must see in <%= city.city %>:</h1>
+    <div class="city-detail">
+        <h2>HISTORY:</h2>
+     <h3><%= city.history %></h3>
+     <h2>TEMPERATURE:</h2>
+     <h3><%= city.temperature %></h3>
+     <h2>TRANSPORTATION:</h2>
+     <h3><%= city.transportation%></h3>
+    </div>
 
-    <ul>
+    <h1 class="city-name">Must see in <%= city.city %>:</h1>
+
+    <ul class="city-must-see">
+
         <% city.mustSee.forEach(mustSee => { %>
-            <li><%= mustSee.name %></li>
-            <li><img class="city-picture" src="<%= mustSee.img %>" alt="City Picture" width="400px"></li>
-            <li><%= mustSee.admissionFee %></li>
-            <li><%= mustSee.category %></li>
-            <li><a href="<%= mustSee.website %>">Official Website</a></li>
-            <li>
-                <nav>
-                    <% if (currentUser) { %>
-                        <form action="/users/list" method="POST">
-                            <input type="submit" name="" id="" value="save">
-                        </form>
-                    <% } else { %>
-                        <button><a href="/sessions/login">Login to save</a></button>
-                    <% } %>
-                </nav>
+            <li> 
+            
+            <h2 class="see-title"><%= mustSee.name %></h2> 
+            <img class="city-picture-must-see" src="<%= mustSee.img %>" alt="City Picture" width="400px">
+            <p><%= mustSee.admissionFee %></p>
+            <p><%= mustSee.category %></p>
+            <a href="<%= mustSee.website %>">Official Website</a>
+            
             </li>
+            
         <% }); %>
     </ul>
-    
+
+</div>
     
     
 </body>

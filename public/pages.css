@@ -81,8 +81,114 @@ h3 {
     margin-right: 500px;
     margin-top: 50px;
     text-align: justify;
+    margin-bottom: 50px;
 }
 
 .about {
     margin-top: 50px;
 }
+
+p {
+    text-align: center;
+    color: rgb(47, 40, 186);
+    margin-bottom:  10px;
+    
+}
+
+.country-flex {
+    display: flex;
+  flex-direction: column;
+
+}
+
+.cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin-bottom:200px;
+    height: 300px;
+}
+
+
+.cities-list {
+line-height: 30px;
+font-size: 100px;
+margin-top: 20px ;
+
+}
+.cities a {
+    color:blue;
+    width: 500px;
+   
+}
+
+.city-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-detail {
+    text-align: center;
+    
+    
+}
+
+.city-must-see{
+
+}
+
+.city-title {
+    align-items: center;
+    background-color: rgba(128, 255, 0, 0.855);
+    margin-top: 15px;
+}
+
+.city-picture {
+    width: 600px;
+    height: 400px;
+    margin-left:700px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    border: 1px solid #09df29; /* Adds a 1px solid border with black color */
+    width: 400px;
+    margin-left: 800px;
+   
+  }
+
+  .city-name {
+    text-shadow: 3px 3px 6px rgba(9, 210, 46, 0.5);
+  }
+
+  .city-must-see {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .city-must-see li {
+    font-size: 16px;
+  }
+
+  .city-must-see a{
+    color: darkblue;
+  }
+
+  .see-title {
+    font-size: 60px;
+  }
+
+  .country-name {
+    text-shadow: 3px 3px 6px rgba(9, 210, 46, 0.5);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-color: #09df29;
+  }
+
+  footer a {
+    margin-left: 600px;
+    font-size: 50px;
+  }
