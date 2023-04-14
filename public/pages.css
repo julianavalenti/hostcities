@@ -163,19 +163,37 @@ h2 {
 
   .city-must-see {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap to new rows */
+    justify-content: space-between; /* Space items evenly along the main axis */
   }
-
+  
   .city-must-see li {
-    font-size: 16px;
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    
   }
 
   .city-must-see a{
     color: darkblue;
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-left: 700px;
+  
   }
 
   .see-title {
-    font-size: 60px;
+    font-size: 30px;
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    width: 600px;
+    margin-left: 700px;
+    text-align: center;
   }
 
   .country-name {
@@ -191,4 +209,20 @@ h2 {
   footer a {
     margin-left: 600px;
     font-size: 50px;
+  }
+
+  .city-picture-must-see {
+    width: 300px;
+    margin: 0;
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-left:700px;
+    width: 600px;
+
+  }
+
+  .see-p {
+    margin-left:700px;
   }
