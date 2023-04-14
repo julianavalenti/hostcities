@@ -44,5 +44,9 @@ Future Enhancements
 
 [HostCities](https://murmuring-badlands-63125.herokuapp.com/cities)
 
+## References 
+
+Banner image from CrailsheimStudio  
+
 
 
