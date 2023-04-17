@@ -1,290 +1,269 @@
-
 html {
     padding: 0;
     margin: 0;
-    height: 100%;
-    box-sizing: border-box ;
+    height: 100vh;
+    box-sizing: border-box;
     position: relative;
   }
   
-  .top-menu {
-      float: initial;
-      height: 600px;
-       width:  2200px;
-  }
+  body {
+    margin: 0;
+    position: relative;
+    background-color: white;
+    background-image: url("/public/images/dreamstime_l_136805601.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+}
+
+
   header {
-      background: white;
-  }
-  
-  li {
-      list-style: none;
-  }
-  
-  a {
-      color: rgb(248, 249, 247);
-      text-decoration: none;
-      font-family: 'Bebas Neue', cursive;
+    background: white;
   }
   
   .navbar {
-      min-height: 70px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 24px;
-      float: right;
-      position: relative;
+    min-height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.6vh;
+    float: right;
+    position: relative;
   }
   
   .nav-menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 60px;
-      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vh;
   }
   
   .nav-branding {
-      font-size: 2rem;
-  
+    font-size: 2vh;
+    color: rgb(248, 249, 247);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
   }
   
   .nav-link {
-      transition: 0.7s ease ;
+    transition: 0.7s ease;
+    color: rgb(248, 249, 247);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
   }
   
   .nav-link:hover {
-      color: rgb(214, 233, 15);
+    color: rgb(214, 233, 15);
   }
   
-  .hamburger {
-      display: none ;
-      cursor: pointer;
-  }
-  .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: white;
-  }
-  
-  .banner img {
-     max-width: 2050px;
-     /* border-bottom-left-radius: 10%; */
-     border-bottom-right-radius: 20%;
-     border-top-left-radius: 20%;
+  .nav-item {
+    list-style: none;
   }
   
   .intro {
-      
-      display: grid;
-      box-sizing: border-box;
-      width: 100%;
-      float: right;
-      text-align: right;
+    display: grid;
+    box-sizing: border-box;
+    width: 100%;
+    float: right;
+    text-align: right;
   }
   
   .intro-title {
-      display: inline;
-      align-items: right;
-      font-family: 'Bebas Neue', cursive;
-     font-weight: 200;
-      font-size: 45px;
-      margin-right: 85px;
-      margin-top: 100px;
+    display: inline;
+    align-items: flex-end; 
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 3.6vh;
+    margin-right: 9.5vh;
+    margin-top: 11vh;
+    color: rgb(246, 241, 241);
+    height: 22vh;
+    float: right;
+}
+
+.intro-sub {
+    font-family: 'Chathura', sans-serif;
+    font-size: 3.2vh;
+    color: whitesmoke;
+    position: absolute;
+    padding-top: 17.5vh;
+    padding-left: 130vh;
+    padding-right: 10vh;
+    text-align: center;
+    line-height: 4vh;
     
-      color: rgb(246, 241, 241) ;
-      height: 200px;
-      float: right;
-      
-  }
+}
+  
+  
   .intro-text {
-  font-family:'Mandali', sans-serif ;
-  font-size: 20px;
-  text-align: right;
-  color: whitesmoke;
-  padding-left: 1300px;
-  padding-right: 100px;
-  margin-top: 60px;
-  text-align: justify;
-  line-height: calc(1ex / 0.25);
-  
+    font-family: 'Mandali', sans-serif;
+    font-size: 1.6vh;
+    text-align: right;
+    color: whitesmoke;
+    padding-left: 120vh;
+    padding-right: 4vh;
+    margin-top: 0.2vh;
+    text-align: justify;
+    line-height: calc(1ex / 0.25);
   }
-  .intro-sub {
-      font-family: 'Chathura', sans-serif;
-      font-size: 40px;
-      color: whitesmoke;
-      position: absolute;
-      padding-top: 100px;
-      padding-left: 1350px;
-      padding-right: 140px;
-      text-align:center;
-      line-height: 40px;
-      margin-top: 150px;
-  }
-  
-  .intro img {
-      max-width: 400px;
-      float: right;
-  }
-  .index {
-      margin: 0;
-      position: relative;
-      background-color: white;
-      background-image: url("/public/images/dreamstime_l_136805601.jpg");
-    
-      background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-      height: 100%;
-  }
-  
   
   .custom-shape-divider-bottom-1681236526 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-      transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
   }
   
   .custom-shape-divider-bottom-1681236526 svg {
-      position: relative;
-      display: block;
-      width: calc(203% + 1.3px);
-      height: 91px;
+    position: relative;
+    display: block;
+    width: calc(203% + 1.3px);
+    height: 9vh;
   }
   
   .custom-shape-divider-bottom-1681236526 .shape-fill {
-      fill: #A1C6EB63;
+    fill: #A1C6EB63;
   }
   
   .countries {
-      min-height: 70px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 24px;
-      float: right;
-      gap: 50px;
-      padding-right: 200px;
-      font-size: 30px;
-      margin-top: 100px;
-      
-  }
+    min-height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.6vh;
+    float: right;
+    gap: 3.5vh;
+    padding-right: 8.7vh;
+    font-size: 2.3vh;
+    margin-top: 15vh;
+}
+
+.country-link {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(149, 255, 0);
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register-btn {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 0;
+    font-size: 1.0vw; 
+    color: #fff;
+    background-color: #052e8651;
+    padding: 1.5vw 3vw; 
+    border: solid 0.2vw #f2f2f2; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1.8vw 5.5vw; 
+    border-radius: 4.5vw; 
+    transition: 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 80vw; 
+    margin-right: 5.8vw; 
+}
+
+
+.register-btn:hover {
+    transition: 1000ms;
+    padding: 1vh 5vh;
+    transform: translateY(-0vh);
+    background-color: #1fd2de;
+    color: #39e816;
+    border: solid 0.4vh #eff2f5;
+}
+
+.btn-link {
+    text-align: center;
+    padding-left: 4.2vh;
+    color: rgb(248, 249, 247);
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/* Media Query for iPhone 12 */
+@media screen and (max-width: 390px) {
+    body {
+        background-image: url("/public/images/iphone-background.jpg");
+        position: relative;
+    }
   
-  .country-link {
-      font-family: 'Bebas Neue', cursive;
-      color: rgb(149, 255, 0);
-  }
+    .intro-title {
+      font-size: 2.2vh;
+      margin-right: 4.5vh;
+      margin-top: 4vh;
+      height: auto;
+      padding-left: 6vh;
+    }
   
-  .about{
-      background-color: rgb(23, 57, 123);
-      position: relative;
-  }
-  .about-text {
-      margin: 0;
-      position: absolute;
-      font-family:'Mandali', sans-serif ;
-      position: absolute;
-     background-color: white;
-     color: rgb(9, 9, 9);
-     align-items: center;
-     margin-top: 400px;
-     margin-bottom: 300px;
-     padding:200px;
+    .intro-sub {
+      padding-top: 9vh;
+      padding-left: 2vh;
+      padding-right: 2vh;
+    }
   
-      
-  }
+    .intro-text {
+      padding-left: 3vh;
+      padding-right: 3vh;
+      font-size: 1.3vh;
+    }
   
-  
-  .register-btn{
-  
-  left:200px;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 0;
-  font-size: 20px;
-  color: #fff;
-  background-color: #052e8651;
-  padding: 10px 30px;
-  border: solid #f2f2f2 2px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 45px;
-  transition : 1000ms;
-  transform: translateY(0);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  margin-left: 1500px;
-  margin-right: 250px;
-  
-  }
-  
-  .register-btn:hover{
-  
-  transition : 1000ms;
-  padding: 10px 50px;
-  transform : translateY(-0px);
-  background-color: #1fd2de;
-  color: #39e816;
-  border: solid 2px #eff2f5;
-  }
-  
-  .btn-link {
-      text-align: center;
-      padding-left: 85px;
-  }
-  
-  .ball-flag-us {
-      align-items: center;
-      position: absolute;
-      margin-top: 450px;
-      margin-left: 800px;
-      justify-content: space-between;
-      align-items: center;
-      gap:40px;
-      
-  }
-  
-  .ball-flag-can {
-      align-items: center;
-      position: absolute;
-      margin-top: 450px;
-      margin-left: 600px;
-      justify-content: space-between;
-      align-items: center;
-      gap:40px;
-      
-  }
-  
-  .ball-flag-mex {
-      align-items: center;
-      position: absolute;
-      margin-top: 450px;
-      margin-left: 1000px;
-      justify-content: space-between;
-      align-items: center;
-      gap:40px;
-      
-  }
-  
-  .about h1 {
-      color: #f8fafa;
-      font-family: 'Bebas Neue', cursive;
-      font-size: 100px;
-      margin-top: 200px;
-      position: absolute;
-      margin-left: 500px;
-      text-shadow: 2px 2px 4px rgb(69, 197, 19);
-  }
+    .register-btn {
+      font-size: 0.8vw;
+      padding: 1vh 2vh;
+      border-radius: 2.5vw;
+      margin-left: 1vh;
+      margin-right: 1vh;
+    }
   
 
+    .navbar {
+        /* Set navbar styles for mobile */
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f2f632;
+        z-index: 9999;
+    }
+    
+    .nav-menu {
+        /* Set nav-menu styles for mobile */
+        justify-content: center; /* Center align menu items */
+        margin-top:0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        gap:20px;
+    }
+    
+    .nav-item {
+        margin-top:0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .nav-link {
+        transition: 0.7s ease;
+        color: rgb(248, 249, 247);
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 10px;
+        padding: 5px;
+
+      }
+      
+      .nav-link:hover {
+        color: rgb(214, 233, 15);
+      }
   
+}
